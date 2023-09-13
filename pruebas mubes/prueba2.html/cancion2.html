@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncy</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body class="body_cancion">
+
+
+<div id="cancion_letras" class="container-fluid">
+
+
+    <video loop autoplay muted id="video" class="video">
+        <source src="../videos/bouncy_mv.mp4">
+    </video>
+
+    <i id="cerrar_letras" class='bx bx-x' onclick="cerrar_letras()"></i> <br>
+
+
+    <div id="letras" class="container">
+
+        <div class="row">
+            <div class="col-lg-2">
+                <img id="portada_cancion" src="../imagenes/bouncy.jpg" height="100px" width="100px">
+            </div>
+
+            <div id="letras_datos" class="col-lg-10">
+                <h3 class="titulo_cancion" id="datos_cancion">BOUNCY (K-HOT CHILLI PEPPERS)</h3>
+                <h6 class="titulo_artista" id="datos_cancion">ATEEZ</h6>
+            </div>
+        </div>
+
+
+                <pre class="lyrics" id="lyrics">
+What you gonna say? (Yeah)
+Sit back and relax, man (hoo)
+Don't you wanna bet, man?
+I got time but it's not for you, bro
+Don't you realize what I'm saying? (Let's go, let's go)
+What you gonna do? Ayy, let's go
+
+One, two 열중쉬어 three, four 하면 후
+리듬에 맞춰 흔들어라 머리
+거칠 것 없지 우릴 막아 봐
+모든 건 unlock, now it's time for the party
+
+아직 배고파 우린 젊기에 (hey)
+비켜봐 'cause we need some air
+묶여 있었던 모든 걸 풀어내
+멈춘 채 살 순 없어 (yeah)
+
+Bring back, microphone 볼륨 올려
+Sit back and relax, everybody
+느껴봐라 이게 우리 소리야
+Come on, everybody
+Slow it down, make it bouncy 지금부터 fly
+좀 다른 spicy 청양고추 vibe
+If you wanna know how, I can show you right now
+우린 만들지 bouncy 불이 붙어 fly
+Yo, make it bouncy 지금부터 fly
+좀 다른 spicy 청양고추 vibe
+If you wanna know how, I can show you right now
+고갤 저어 bounce, bounce 하늘 위로 fly, fly
+
+Slow it down, make it bouncy
+지금부터 fly (fix on)
+고개를 하늘 위로 들어 (들어)
+앞, 뒤, 양옆, 내 말 들어
+S-O-N-G-M-I-N-G-I
+Gonna know it's over (ayy)
+출신 위치 나이 종교 나라까지
+허물없이 전부 it don't matter (matter)
+미칠 대로 미친 사람들과
+막 과열 직전까지 털어 (hoo)
+
+Yeah, want it, want it and burn it, burn it
+또 놀아 보자 더 뜨거워 여긴
+튀어 올라봐 높이 더 높이
+터진다 터져 날아라 멀리 (slow)
+Gimme 분위기를 뺏지 (분위기를 뺏지)
+따라 추던가 넌 백기 (ooh)
+그것도 못 하면 때찌
+
+Bring back, microphone 볼륨 올려 (everybody)
+Sit back and relax, everybody (everybody)
+느껴봐라 이게 우리 소리야
+
+One, two, three
+Slow it down, make it bouncy 지금부터 fly
+좀 다른 spicy 청양고추 vibe
+If you wanna know how, I can show you right now
+우린 만들지 bouncy 불이 붙어, fly
+Yo, make it bouncy 지금부터 fly
+좀 다른 spicy 청양고추 vibe
+If you wanna know how, I can show you right now
+고갤 저어 bounce, bounce 하늘 위로 fly, fly
+
+세상 위를 뛰어 봐
+하늘 위로 날아 봐
+리듬 안에 모여라
+하나 되어 shout it out
+
+Slow it down, make it bouncy 지금부터 fly
+좀 다른 spicy 청양고추 vibe
+If you wanna know how, I can show you right now
+고갤 저어 bounce, bounce 하늘 위로 fly, fly
+Oh, oh (whoa, whoa, whoa, whoa)
+Oh, oh (whoa, whoa, fly, fly)
+
+If you wanna know how, I can show you right now
+고갤 들어 bounce, bounce 하늘 위로 fly, fly</pre>
+
+
+    </div>
+</div> 
+
+            <div id="cancion" class="row">
+
+                <div class="col-lg-1">
+                    <div class="container">
+
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+
+                    <div id="cancion_general" class="row">
+
+
+
+                        <div id="info_portada" class="col-lg-3">
+                            <img class="portada_cancion" src="../imagenes/bouncy.jpg" height="74%" width="160%">
+                                
+
+                            <div class="column">
+
+                                <div class="col-lg-6">
+                                    <i type="button" id="play_pause"  class='bx bx-play' onclick="reproducir()"></i>
+                                    <label id="div_corazon" class="container">
+                                        <input type="checkbox">
+                                        <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"></path></svg>
+                                    </label>
+                                </div>
+   
+                            </div>
+
+                                <audio src="../canciones/bouncy.mp3" id="musica"></audio>
+                        </div>
+
+                        <div id="info_cancion" class="col-lg-9">
+                            <h3 id="tipo_interfaz" class="datos_cancion">Canción</h3>
+                            <h1 id="titulo_cancion" class="datos_cancion">BOUNCY (K-HOT CHILLI PEPPERS)</h1>
+                            <h6 id="artista_y_album" class="datos_cancion">ATEEZ - THE WORLD EP.2: OUTLAW - 2023 - 3:07</h6>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="container">
+
+                    </div>
+                </div>
+
+                <footer class="reproductor" id="reproductor">
+                    <div class="portada">
+                        <img src="" alt="" id="img_reproductor">
+                        <i id="cerrar_reproductor" class='bx bx-x' onclick="cerrar()" ></i>
+                        
+                        <span class="titulo_portada"></span>
+                        <span class="artista_portada"></span>
+                    </div>
+                    <span class="tiempo-actual">00:00 </span>
+                            <span class="tiempo-duracion">00:00</span>
+                    <section class="cont_reproductor">
+                        
+                        
+                            <input type="range" value="0" class="deslizador-audio">
+                            
+                                <div class="controles">
+                                    <i type="button" id="previous_btn" class='bx bx-skip-previous' ></i>
+                                    <i type="button" id="play_pausa" class='bx bx-play' ></i>
+                                    <i type="button" id="next_btn" class='bx bx-skip-next'></i>
+                                </div>
+                                
+                    </section>
+                    <div class="iconos">
+                        <i class='bx bxs-user-detail' ></i>
+                        <i id="like" class='bx bxs-heart' ></i>
+                        <i type="button" id="lyrics" class='bx bx-detail' onclick="letras()"></i>
+                    </div>
+
+                </footer>
+                
+            </div>
+
+            
+
+            
+
+
+            <script src="../scripts.js"></script>
+            <script src="../reproductor_musica.js"></script>
+
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
